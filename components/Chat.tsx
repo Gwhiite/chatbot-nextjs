@@ -16,10 +16,12 @@ import { ScrollArea } from "./ui/scroll-area";
 const Chat = () => {
   const { messages, input, handleInputChange, handleSubmit, error } = useChat();
   return (
-    <div className="flex bg-slate-800 min-h-screen items-center justify-center">
-      <Card className="w-[440px]">
-        <CardHeader>
-          <CardTitle>Chatbot AI</CardTitle>
+    <div className="flex bg-[#121212] min-h-screen items-center justify-center">
+      <Card className="w-[440px] bg-slate-50">
+        <CardHeader className="flex flex-col items-center justify-center">
+          <CardTitle className="underline decoration-[#ba110c] underline-offset-1">
+            Chatbot AI
+          </CardTitle>
           <CardDescription>Ask any question you want</CardDescription>
         </CardHeader>
         <CardContent>
